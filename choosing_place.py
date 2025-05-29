@@ -32,3 +32,17 @@ def select_destination(destination_list):
              break
         else: print("Please enter a valid input")
    return destination
+
+vacation=""
+while vacation != "yes" and vacation != "no":
+   vacation = input("Are you looking to go on a vaction this summer in the US? (Yes/No): ").lower()
+
+
+if vacation == "yes":
+   location = ""
+   while location != "east" and location != "west":
+       location = input("Would you like to go East or West? (East/West): ").lower()
+      
+   place_type = ""
+   while place_type != "city" and place_type != "nature":
+       place_type = input("Would you like to be in a city or nature (City/Nature): ").lower()

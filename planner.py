@@ -17,3 +17,19 @@ daily_plan = []
    for day in range(1, num_days + 1):
         activity = input(f"What do you want to do on Day {day}? (e.g Amusment Park, Eating, Fishing, Hiking, Sight-Seeing): ")
         daily_plan.append(f"Day {day}: {activity}")
+
+   print("\n----- Your Summer Vacation Summary -----\n")
+   print(f"Location: {location}")
+   print(f"Location Type: {place_type}")
+   print(f"Destination: {selected_destination}")
+   print(f"Number of days: {num_days}")
+   print(f"Number of Travellers: {num_travellers}")
+   print("--- Your Daily Plan ---")
+   if daily_plan:
+        for plan in daily_plan:
+             print(f" -> {plan}")
+   else:
+        print("No daily Plan yet!!!")
+   print ("\nEnjoy your Vacation!!! \n")
+else:
+   print("Come back when you are looking for a vacation! ")

@@ -16,6 +16,7 @@ def get_destination_list(loc, loc_type):
                return west_city
              if (loc_type == "nature"):
                return west_nature
+
 def select_destination(destination_list):
    print("\n!---Available Destinations---!")
    i=0

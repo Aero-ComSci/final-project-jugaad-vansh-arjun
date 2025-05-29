@@ -46,3 +46,8 @@ if vacation == "yes":
    place_type = ""
    while place_type != "city" and place_type != "nature":
        place_type = input("Would you like to be in a city or nature (City/Nature): ").lower()
+
+
+   destination_selection_list = get_destination_list(location, place_type)
+   selected_destination = select_destination(destination_selection_list)        
+   print(f"\nYou've chosen: {selected_destination}!")

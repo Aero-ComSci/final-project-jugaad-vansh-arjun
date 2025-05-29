@@ -1,13 +1,18 @@
-vac = input("Are you looking to go on a vaction this summer in the US?")
-if vac == "yes":
-    location = print("Would you like to go East or West?")
-        if location == "East":
-            place_type == print("Would you like to be in a city or nature")
-                if place_type == "city": 
-                    print("Your top locations are ")
-        elif location == "West"
-            place_type == print("Would you like to be in a city or nature")
+def get_destination_list(loc, loc_type):
+        east_city = [ "New York City", "Boston", "Miami", "Orlando", "Washington DC", "Chicago"]
+        east_nature = [ "Niagara Falls", "Shenandoah National Park", "Acadia National Park"]
+        west_city =  [ "LA", "Las Vegas", "San Francisco", "Seattle", "Hawaiian Islands"]
+        west_nature = ["Yosemite", "Yellowstone", "Grand Canyon", "Anchorage"]
+      
+        if (loc == "east"):
+             if (loc_type == "city"):
+               return east_city
+             if (loc_type == "nature"):
+               return east_nature
 
-elif vac == "no":
-    print("Come back when you are looking for a vacation!")
-else: print("Please say yes or no!")
+
+        if (loc == "west"):
+             if (loc_type == "city"):
+               return west_city
+             if (loc_type == "nature"):
+               return west_nature
